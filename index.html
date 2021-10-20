@@ -19,7 +19,7 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/all.min.css" integrity="sha256-mUZM63G8m73Mcidfrv5E+Y61y7a12O5mW4ezU3bxqW4=" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
 
-<script class="next-config" data-name="main" type="application/json">{"hostname":"example.com","root":"/","images":"/images","scheme":"Muse","darkmode":false,"version":"8.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}}</script><script src="/js/config.js"></script>
+<script class="next-config" data-name="main" type="application/json">{"hostname":"example.com","root":"/","images":"/images","scheme":"Mist","darkmode":false,"version":"8.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}}</script><script src="/js/config.js"></script>
 <meta property="og:type" content="website">
 <meta property="og:title" content="bilikid&#39;s notes">
 <meta property="og:url" content="http://example.com/index.html">
@@ -189,7 +189,7 @@
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">Edited on</span>
-        <time title="Modified: 2021-10-20 22:19:35" itemprop="dateModified" datetime="2021-10-20T22:19:35+08:00">2021-10-20</time>
+        <time title="Modified: 2021-10-20 22:32:15" itemprop="dateModified" datetime="2021-10-20T22:32:15+08:00">2021-10-20</time>
       </span>
 
   
@@ -202,11 +202,12 @@
     
     
     <div class="post-body" itemprop="articleBody">
-          <p>Wanna known if a person’s life is predictable. Suppose there is a procedure like this:<br>$$<br>P(l\quad p)=\begin{cases}<br>true,\quad life \ is \ predictable \<br>false, \quad life \ is \ unpredictable<br>\end{cases}<br>$$<br>and we got a procedure to test if it is correct:</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">(define diag                </span><br><span class="line">  (lambda (p)              </span><br><span class="line">    (if (P p p)              </span><br><span class="line">        (other-than (p p))    </span><br><span class="line">        false)))</span><br></pre></td></tr></table></figure>
-<p>where other-than’s definition is:</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">(define other-than</span><br><span class="line">  (lambda (x)</span><br><span class="line">    (if (eq? x &#x27;a)</span><br><span class="line">        &#x27;b</span><br><span class="line">        &#x27;a)))</span><br></pre></td></tr></table></figure>
-<p>other-than is always output the opposite of input. so if applied diag to itself—(diag diag), and (P diag diag) get two possible value: if a person’s life is predictable, then other-than get the conflicting result; if a person’s life is unpredictable, then we get a false, so it is predicatable, which is also a conflict. Then we get to known life is unpredictable.</p>
+          <p>Wanna known if a person’s life is predictable. Suppose there is a procedure like this: <span class="math display">\[
+P(l\quad p)=\begin{cases}
+true,\quad life \ is \ predictable &amp;\\
+false, \quad life \ is \ unpredictable &amp;
+\end{cases}
+\]</span> and we got a procedure to test if it is correct: <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">(define diag                </span><br><span class="line">  (lambda (p)              </span><br><span class="line">    (if (P p p)              </span><br><span class="line">        (other-than (p p))    </span><br><span class="line">        false)))</span><br></pre></td></tr></table></figure> where other-than’s definition is: <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">(define other-than</span><br><span class="line">  (lambda (x)</span><br><span class="line">    (if (eq? x &#x27;a)</span><br><span class="line">        &#x27;b</span><br><span class="line">        &#x27;a)))</span><br></pre></td></tr></table></figure> other-than is always output the opposite of input. so if applied diag to itself—(diag diag), and (P diag diag) get two possible value: if a person’s life is predictable, then other-than get the conflicting result; if a person’s life is unpredictable, then we get a false, so it is predicatable, which is also a conflict. Then we get to known life is unpredictable.</p>
 <p>this proof is based on SICP.:)</p>
 
       
@@ -242,7 +243,7 @@
   </span>
   <span class="author" itemprop="copyrightHolder">bilikid</span>
 </div>
-  <div class="powered-by">Powered by <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/muse/" rel="noopener" target="_blank">NexT.Muse</a>
+  <div class="powered-by">Powered by <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/mist/" rel="noopener" target="_blank">NexT.Mist</a>
   </div>
 
     </div>
