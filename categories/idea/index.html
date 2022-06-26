@@ -1,19 +1,16 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
-	<meta name="generator" content="Hugo 0.92.2" />
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Who Am I #  I&rsquo;m a software engineer with 7 year of development experience.
-I love C, python, and I am a rustacean🦀.
-There is my Blog.">
+<meta name="description" content="">
 <meta name="theme-color" content="#FFFFFF">
-<meta name="color-scheme" content="light dark"><meta property="og:title" content="Introduction" />
+<meta name="color-scheme" content="light dark"><meta property="og:title" content="idea" />
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="https://bilikid.github.io/" />
+<meta property="og:url" content="https://bilikid.github.io/categories/idea/" />
 
-<title>Introduction | BiliKid&#39;s blog</title>
+<title>idea | BiliKid&#39;s blog</title>
 <link rel="manifest" href="/manifest.json">
 <link rel="icon" href="/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/book.min.82c5dbd23447cee0b4c2aa3ed08ce0961faa40e1fa370eee4f8c9f02e0d46b5f.css" integrity="sha256-gsXb0jRHzuC0wqo&#43;0Izglh&#43;qQOH6Nw7uT4yfAuDUa18=" crossorigin="anonymous">
@@ -21,7 +18,7 @@ There is my Blog.">
   <script defer src="/en.search.min.e9800af78c1530bc0241ebbfd85c996db807d9e11e6774057baa3aa7b3d4c07a.js" integrity="sha256-6YAK94wVMLwCQeu/2FyZbbgH2eEeZ3QFe6o6p7PUwHo=" crossorigin="anonymous"></script>
 
   <script defer src="/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js" integrity="sha256-b2&#43;Q/LjrHEnsOJg45rgB0N4ZQwuOUWkC&#43;NdcPIvZhzk=" crossorigin="anonymous"></script>
-<link rel="alternate" type="application/rss+xml" href="https://bilikid.github.io/index.xml" title="BiliKid's blog" />
+<link rel="alternate" type="application/rss+xml" href="https://bilikid.github.io/categories/idea/index.xml" title="BiliKid's blog" />
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -120,7 +117,7 @@ https://github.com/alex-shpak/hugo-book
     <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
   </label>
 
-  <strong>Introduction</strong>
+  <strong>idea</strong>
 
   <label for="toc-control">
     
@@ -133,17 +130,44 @@ https://github.com/alex-shpak/hugo-book
   
   <aside class="hidden clearfix">
     
-  
-<nav id="TableOfContents">
+  <nav>
   <ul>
-    <li>
+  
+    
+    <li class="book-section-flat">
+      <strong>Categories</strong>
       <ul>
-        <li><a href="#who-am-i">Who Am I</a></li>
+      
+        <li class="flex justify-between">
+          <a href="/categories/idea/">idea</a>
+          <span>1</span>
+        </li>
+      
       </ul>
     </li>
+    
+  
+    
+    <li class="book-section-flat">
+      <strong>Tags</strong>
+      <ul>
+      
+        <li class="flex justify-between">
+          <a href="/tags/lisp/">lisp</a>
+          <span>1</span>
+        </li>
+      
+        <li class="flex justify-between">
+          <a href="/tags/scheme/">scheme</a>
+          <span>1</span>
+        </li>
+      
+      </ul>
+    </li>
+    
+  
   </ul>
 </nav>
-
 
 
   </aside>
@@ -153,15 +177,44 @@ https://github.com/alex-shpak/hugo-book
 
       
       
-  <article class="markdown"><h2 id="who-am-i">
-  Who Am I
-  <a class="anchor" href="#who-am-i">#</a>
-</h2>
-<p>I&rsquo;m a software engineer with 7 year of development experience.</p>
-<p>I love C, python, and I am a rustacean🦀.</p>
-<p>There is my 
-  <a href="/posts/">Blog</a>.</p>
-</article>
+  
+  <article class="markdown book-post">
+    <h2>
+      <a href="/posts/life-is-unpredictable/">a proof of “life is unpredictable”</a>
+    </h2>
+    
+  <h5>October 20, 2021</h5>
+
+
+
+  
+  <div>
+    
+      <a href="/categories/idea/">idea</a>
+  </div>
+  
+
+  
+  <div>
+    
+      <a href="/tags/scheme/">scheme</a>, 
+      <a href="/tags/lisp/">lisp</a>
+  </div>
+  
+
+
+
+
+    <p>Wanna known if a person’s life is predictable. Suppose there is a procedure like this:   \[P(l\quad p)=\begin{cases} true,\quad life \ is \ predictable &amp;\\ false, \quad life \ is \ unpredictable &amp; \end{cases}\]  and we got a procedure to test if it is correct:
+(define diag (lambda (p) (if (P p p) (other-than (p p)) false))) where other-than’s definition is:
+(define other-than (lambda (x) (if (eq? x 'a) 'b 'a))) other-than is always output the opposite of input.
+        <a href="/posts/life-is-unpredictable/">...</a>
+      
+    </p>
+  </article>
+  
+
+  
  
       
 
@@ -170,20 +223,7 @@ https://github.com/alex-shpak/hugo-book
   <div class="flex flex-wrap justify-between">
 
 
-  <div><a class="flex align-center" href="https://github.com/alex-shpak/hugo-book/commit/341e2df1cc75b2086bff91cc1ff65e5f85afcd74" title='Last modified by root | June 26, 2022' target="_blank" rel="noopener">
-      <img src="/svg/calendar.svg" class="book-icon" alt="Calendar" />
-      <span>June 26, 2022</span>
-    </a>
-  </div>
 
-
-
-  <div>
-    <a class="flex align-center" href="https://github.com/alex-shpak/hugo-book/edit/main/exampleSite/content/_index.md" target="_blank" rel="noopener">
-      <img src="/svg/edit.svg" class="book-icon" alt="Edit" />
-      <span>Edit this page</span>
-    </a>
-  </div>
 
 
 </div>
@@ -199,10 +239,6 @@ https://github.com/alex-shpak/hugo-book
 
       
   
-  <div class="book-comments">
-
-</div>
-  
  
 
       <label for="menu-control" class="hidden book-menu-overlay"></label>
@@ -212,17 +248,44 @@ https://github.com/alex-shpak/hugo-book
     <aside class="book-toc">
       <div class="book-toc-content">
         
-  
-<nav id="TableOfContents">
+  <nav>
   <ul>
-    <li>
+  
+    
+    <li class="book-section-flat">
+      <strong>Categories</strong>
       <ul>
-        <li><a href="#who-am-i">Who Am I</a></li>
+      
+        <li class="flex justify-between">
+          <a href="/categories/idea/">idea</a>
+          <span>1</span>
+        </li>
+      
       </ul>
     </li>
+    
+  
+    
+    <li class="book-section-flat">
+      <strong>Tags</strong>
+      <ul>
+      
+        <li class="flex justify-between">
+          <a href="/tags/lisp/">lisp</a>
+          <span>1</span>
+        </li>
+      
+        <li class="flex justify-between">
+          <a href="/tags/scheme/">scheme</a>
+          <span>1</span>
+        </li>
+      
+      </ul>
+    </li>
+    
+  
   </ul>
 </nav>
-
 
  
       </div>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>idea on BiliKid&#39;s blog</title>
+    <link>https://bilikid.github.io/categories/idea/</link>
+    <description>Recent content in idea on BiliKid&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Wed, 20 Oct 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://bilikid.github.io/categories/idea/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>a proof of “life is unpredictable”</title>
+      <link>https://bilikid.github.io/posts/life-is-unpredictable/</link>
+      <pubDate>Wed, 20 Oct 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://bilikid.github.io/posts/life-is-unpredictable/</guid>
+      <description>Wanna known if a person’s life is predictable. Suppose there is a procedure like this:   \[P(l\quad p)=\begin{cases} true,\quad life \ is \ predictable &amp;amp;\\ false, \quad life \ is \ unpredictable &amp;amp; \end{cases}\]  and we got a procedure to test if it is correct:
+(define diag (lambda (p) (if (P p p) (other-than (p p)) false))) where other-than’s definition is:
+(define other-than (lambda (x) (if (eq? x &#39;a) &#39;b &#39;a))) other-than is always output the opposite of input.</description>
+    </item>
+    
+  </channel>
+</rss>
