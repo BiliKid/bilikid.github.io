@@ -6,6 +6,15 @@
     <description>Recent content in Blog on BiliKid&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator><atom:link href="https://bilikid.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Test</title>
+      <link>https://bilikid.github.io/posts/test/</link>
+      <pubDate>Sun, 15 Oct 2023 22:20:52 +0800</pubDate>
+      
+      <guid>https://bilikid.github.io/posts/test/</guid>
+      <description>Test #  I&amp;#39;m back! </description>
+    </item>
+    
+    <item>
       <title>a proof of “life is unpredictable”</title>
       <link>https://bilikid.github.io/posts/life-is-unpredictable/</link>
       <pubDate>Wed, 20 Oct 2021 00:00:00 +0000</pubDate>
@@ -13,7 +22,7 @@
       <guid>https://bilikid.github.io/posts/life-is-unpredictable/</guid>
       <description>Wanna known if a person’s life is predictable. Suppose there is a procedure like this:   \[P(l\quad p)=\begin{cases} true,\quad life \ is \ predictable &amp;amp;\\ false, \quad life \ is \ unpredictable &amp;amp; \end{cases}\]  and we got a procedure to test if it is correct:
 (define diag (lambda (p) (if (P p p) (other-than (p p)) false))) where other-than’s definition is:
-(define other-than (lambda (x) (if (eq? x &#39;a) &#39;b &#39;a))) other-than is always output the opposite of input.</description>
+(define other-than (lambda (x) (if (eq? x &amp;#39;a) &amp;#39;b &amp;#39;a))) other-than is always output the opposite of input.</description>
     </item>
     
   </channel>

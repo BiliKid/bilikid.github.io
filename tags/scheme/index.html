@@ -15,7 +15,7 @@
 <link rel="icon" href="/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/book.min.82c5dbd23447cee0b4c2aa3ed08ce0961faa40e1fa370eee4f8c9f02e0d46b5f.css" integrity="sha256-gsXb0jRHzuC0wqo&#43;0Izglh&#43;qQOH6Nw7uT4yfAuDUa18=" crossorigin="anonymous">
   <script defer src="/flexsearch.min.js"></script>
-  <script defer src="/en.search.min.e9800af78c1530bc0241ebbfd85c996db807d9e11e6774057baa3aa7b3d4c07a.js" integrity="sha256-6YAK94wVMLwCQeu/2FyZbbgH2eEeZ3QFe6o6p7PUwHo=" crossorigin="anonymous"></script>
+  <script defer src="/en.search.min.a5ee05ce4f12b7caccd9e8fd6c13ef1e266f3ddc0b4318154a01e23b76121f6e.js" integrity="sha256-pe4Fzk8St8rM2ej9bBPvHiZvPdwLQxgVSgHiO3YSH24=" crossorigin="anonymous"></script>
 
   <script defer src="/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js" integrity="sha256-b2&#43;Q/LjrHEnsOJg45rgB0N4ZQwuOUWkC&#43;NdcPIvZhzk=" crossorigin="anonymous"></script>
 <link rel="alternate" type="application/rss+xml" href="https://bilikid.github.io/tags/scheme/index.xml" title="BiliKid's blog" />
@@ -102,7 +102,7 @@ https://github.com/alex-shpak/hugo-book
 
 
 
-  <script>(function(){var a=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(b){localStorage.setItem("menu.scrollTop",a.scrollTop)}),a.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+  <script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
 
 
  
@@ -207,7 +207,7 @@ https://github.com/alex-shpak/hugo-book
 
     <p>Wanna known if a person’s life is predictable. Suppose there is a procedure like this:   \[P(l\quad p)=\begin{cases} true,\quad life \ is \ predictable &amp;\\ false, \quad life \ is \ unpredictable &amp; \end{cases}\]  and we got a procedure to test if it is correct:
 (define diag (lambda (p) (if (P p p) (other-than (p p)) false))) where other-than’s definition is:
-(define other-than (lambda (x) (if (eq? x 'a) 'b 'a))) other-than is always output the opposite of input.
+(define other-than (lambda (x) (if (eq? x &#39;a) &#39;b &#39;a))) other-than is always output the opposite of input.
         <a href="/posts/life-is-unpredictable/">...</a>
       
     </p>
@@ -230,7 +230,7 @@ https://github.com/alex-shpak/hugo-book
 
 
 
-  <script>(function(){function a(c){const a=window.getSelection(),b=document.createRange();b.selectNodeContents(c),a.removeAllRanges(),a.addRange(b)}document.querySelectorAll("pre code").forEach(b=>{b.addEventListener("click",function(c){a(b.parentElement),navigator.clipboard&&navigator.clipboard.writeText(b.parentElement.textContent)})})})()</script>
+  <script>(function(){function e(n){const e=window.getSelection(),t=document.createRange();t.selectNodeContents(n),e.removeAllRanges(),e.addRange(t)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script>
 
 
  
