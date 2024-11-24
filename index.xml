@@ -26,7 +26,7 @@
       <link>https://bilikid.github.io/posts/test/</link>
       <pubDate>Sun, 15 Oct 2023 22:20:52 +0800</pubDate>
       <guid>https://bilikid.github.io/posts/test/</guid>
-      <description>&lt;h3 id=&#34;test&#34;&gt;&#xA;  Test&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#test&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h3&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;I&amp;#39;m back!&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
+      <description>&lt;h3 id=&#34;test&#34;&gt;&#xA;  Test&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#test&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h3&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;I&amp;#39;m back!&#xA;&#xA;hugo new version test&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
     </item>
     <item>
       <title>a proof of “life is unpredictable”</title>
