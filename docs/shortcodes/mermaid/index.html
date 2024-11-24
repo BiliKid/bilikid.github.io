@@ -3,27 +3,70 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Mermaid Chart #   MermaidJS is library for generating svg charts and diagrams from text.
-Override Mermaid Initialization Config
-To override the initialization config for Mermaid, create a mermaid.json file in your assets folder!
- Example #  {{&lt; mermaid [class=&#34;text-center&#34;]&gt;}} stateDiagram-v2  State1: The state with a note  note right of State1  Important information! You can write  notes.  end note  State1 --&gt; State2  note left of State2 : This is the note to the left.">
-<meta name="theme-color" content="#FFFFFF">
-<meta name="color-scheme" content="light dark"><meta property="og:title" content="" />
-<meta property="og:description" content="Mermaid Chart #   MermaidJS is library for generating svg charts and diagrams from text.
-Override Mermaid Initialization Config
-To override the initialization config for Mermaid, create a mermaid.json file in your assets folder!
- Example #  {{&lt; mermaid [class=&#34;text-center&#34;]&gt;}} stateDiagram-v2  State1: The state with a note  note right of State1  Important information! You can write  notes.  end note  State1 --&gt; State2  note left of State2 : This is the note to the left." />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://bilikid.github.io/docs/shortcodes/mermaid/" /><meta property="article:section" content="docs" />
+<meta name="description" content="
+  Mermaid Chart
+  #
 
-<meta property="article:modified_time" content="2022-06-26T20:39:08+08:00" />
 
+  MermaidJS is library for generating svg charts and diagrams from text.
+
+Override Mermaid initialization config
+To override the 
+  initialization config for Mermaid,
+create a mermaid.json file in your assets folder!
+
+
+  Example
+  #
+
+
+
+{{&lt; mermaid [class=&#34;...&#34;] &gt;}}
+stateDiagram-v2
+    State1: The state with a note
+    note right of State1
+        Important information! You can write
+        notes.
+    end note
+    State1 --&gt; State2
+    note left of State2 : This is the note to the left.
+{{&lt; /mermaid &gt;}}
+  
+
+
+  
+
+stateDiagram-v2
+    State1: The state with a note
+    note right of State1
+        Important information! You can write
+        notes.
+    end note
+    State1 --&gt; State2
+    note left of State2 : This is the note to the left.
+
+  
+">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
+<meta name="color-scheme" content="light dark"><meta property="og:url" content="https://bilikid.github.io/docs/shortcodes/mermaid/">
+  <meta property="og:site_name" content="BiliKid&#39;s blog">
+  <meta property="og:title" content="BiliKid&#39;s blog">
+  <meta property="og:description" content="Mermaid Chart # MermaidJS is library for generating svg charts and diagrams from text.
+Override Mermaid initialization config
+To override the initialization config for Mermaid, create a mermaid.json file in your assets folder!
+Example # {{&lt; mermaid [class=&#34;...&#34;] &gt;}} stateDiagram-v2 State1: The state with a note note right of State1 Important information! You can write notes. end note State1 --&gt; State2 note left of State2 : This is the note to the left. {{&lt; /mermaid &gt;}} stateDiagram-v2 State1: The state with a note note right of State1 Important information! You can write notes. end note State1 --&gt; State2 note left of State2 : This is the note to the left.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="docs">
+    <meta property="article:modified_time" content="2024-11-24T10:35:18+08:00">
 <title>Mermaid | BiliKid&#39;s blog</title>
+<link rel="icon" href="/favicon.png" >
 <link rel="manifest" href="/manifest.json">
-<link rel="icon" href="/favicon.png" type="image/x-icon">
-<link rel="stylesheet" href="/book.min.82c5dbd23447cee0b4c2aa3ed08ce0961faa40e1fa370eee4f8c9f02e0d46b5f.css" integrity="sha256-gsXb0jRHzuC0wqo&#43;0Izglh&#43;qQOH6Nw7uT4yfAuDUa18=" crossorigin="anonymous">
-  <script defer src="/flexsearch.min.js"></script>
-  <script defer src="/en.search.min.a5ee05ce4f12b7caccd9e8fd6c13ef1e266f3ddc0b4318154a01e23b76121f6e.js" integrity="sha256-pe4Fzk8St8rM2ej9bBPvHiZvPdwLQxgVSgHiO3YSH24=" crossorigin="anonymous"></script>
+<link rel="canonical" href="https://bilikid.github.io/docs/shortcodes/mermaid/">
+<link rel="stylesheet" href="/book.min.6c8b9d2a1fc95075ed7da46ca81060b39add8fff6741ac51259f768929281e2c.css" integrity="sha256-bIudKh/JUHXtfaRsqBBgs5rdj/9nQaxRJZ92iSkoHiw=" crossorigin="anonymous">
+  <script defer src="/fuse.min.js"></script>
+  <script defer src="/en.search.min.a61b5f14cc1f05308318622b4190229fcd686d84d9e96f2c3fe862dfc46b88f1.js" integrity="sha256-phtfFMwfBTCDGGIrQZAin81obYTZ6W8sP&#43;hi38RriPE=" crossorigin="anonymous"></script>
 
   <script defer src="/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js" integrity="sha256-b2&#43;Q/LjrHEnsOJg45rgB0N4ZQwuOUWkC&#43;NdcPIvZhzk=" crossorigin="anonymous"></script>
 <!--
@@ -46,11 +89,12 @@ https://github.com/alex-shpak/hugo-book
 </h2>
 
 
-<div class="book-search">
+<div class="book-search hidden">
   <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
   <div class="book-search-spinner hidden"></div>
   <ul id="book-search-results"></ul>
 </div>
+<script>document.querySelector(".book-search").classList.remove("hidden")</script>
 
 
 
@@ -63,7 +107,6 @@ https://github.com/alex-shpak/hugo-book
 
 
 
-  
 
 
 
@@ -81,18 +124,17 @@ https://github.com/alex-shpak/hugo-book
 
 
 
-
   
 <ul>
   
   <li>
-    <a href="/posts/" >
+    <a href="/posts/"  >
         Blog
       </a>
   </li>
   
   <li>
-    <a href="https://github.com/BiliKid" target="_blank" rel="noopener">
+    <a href="https://github.com/BiliKid"  target="_blank" rel="noopener">
         Github
       </a>
   </li>
@@ -124,61 +166,39 @@ https://github.com/alex-shpak/hugo-book
     <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
   </label>
 
-  <strong>Mermaid</strong>
+  <h3>Mermaid</h3>
 
   <label for="toc-control">
-    
-    <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
     
   </label>
 </div>
 
 
   
-  <aside class="hidden clearfix">
-    
-  
-<nav id="TableOfContents">
-  <ul>
-    <li><a href="#mermaid-chart">Mermaid Chart</a>
-      <ul>
-        <li><a href="#example">Example</a></li>
-      </ul>
-    </li>
-  </ul>
-</nav>
-
-
-
-  </aside>
-  
  
       </header>
 
       
       
-  <article class="markdown"><h1 id="mermaid-chart">
+  <article class="markdown book-article"><h1 id="mermaid-chart">
   Mermaid Chart
   <a class="anchor" href="#mermaid-chart">#</a>
 </h1>
 <p>
   <a href="https://mermaid-js.github.io/">MermaidJS</a> is library for generating svg charts and diagrams from text.</p>
 <blockquote class="book-hint info">
-  <p><strong>Override Mermaid Initialization Config</strong></p>
-<p>To override the 
+<p><strong>Override Mermaid initialization config</strong><br>
+To override the 
   <a href="https://mermaid-js.github.io/mermaid/#/Setup">initialization config</a> for Mermaid,
 create a <code>mermaid.json</code> file in your <code>assets</code> folder!</p>
-
 </blockquote>
-
 <h2 id="example">
   Example
   <a class="anchor" href="#example">#</a>
 </h2>
 <div class="book-columns flex flex-wrap">
-
-  <div class="flex-even markdown-inner">
-    <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-tpl" data-lang="tpl"><span style="display:flex;"><span><span style="color:#75715e">{{</span><span style="color:#f92672">&lt;</span> <span style="color:#a6e22e">mermaid</span> <span style="color:#f92672">[</span><span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;text-center&#34;</span><span style="color:#f92672">]&gt;</span><span style="color:#75715e">}}</span>
+<div class="flex-even markdown-inner" style="flex-grow: 1;">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-tpl" data-lang="tpl"><span style="display:flex;"><span><span style="color:#75715e">{{</span><span style="color:#f92672">&lt;</span> <span style="color:#a6e22e">mermaid</span> <span style="color:#f92672">[</span><span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;...&#34;</span><span style="color:#f92672">]</span> <span style="color:#f92672">&gt;</span><span style="color:#75715e">}}</span>
 </span></span><span style="display:flex;"><span>stateDiagram-v2
 </span></span><span style="display:flex;"><span>    State1: The state with a note
 </span></span><span style="display:flex;"><span>    note right of State1
@@ -188,11 +208,9 @@ create a <code>mermaid.json</code> file in your <code>assets</code> folder!</p>
 </span></span><span style="display:flex;"><span>    State1 --&gt; State2
 </span></span><span style="display:flex;"><span>    note left of State2 : This is the note to the left.
 </span></span><span style="display:flex;"><span><span style="color:#75715e">{{</span><span style="color:#f92672">&lt;</span> <span style="color:#f92672">/</span><span style="color:#a6e22e">mermaid</span> <span style="color:#f92672">&gt;</span><span style="color:#75715e">}}</span>
-</span></span></code></pre></div>
-  </div>
-
-  <div class="flex-even markdown-inner">
-    <script src="/mermaid.min.js"></script>
+</span></span></code></pre></div>  </div>
+<div class="flex-even markdown-inner" style="flex-grow: 1;">
+<script src="/mermaid.min.js"></script>
   <script>mermaid.initialize({
   "flowchart": {
     "useMaxWidth":true
@@ -200,7 +218,7 @@ create a <code>mermaid.json</code> file in your <code>assets</code> folder!</p>
   "theme": "default"
 }
 )</script>
-<p class="mermaid">
+<pre class="mermaid">
 stateDiagram-v2
     State1: The state with a note
     note right of State1
@@ -209,10 +227,9 @@ stateDiagram-v2
     end note
     State1 --> State2
     note left of State2 : This is the note to the left.
+</pre>
   </div>
-
 </div>
-
 </article>
  
       
@@ -222,9 +239,9 @@ stateDiagram-v2
   <div class="flex flex-wrap justify-between">
 
 
-  <div><a class="flex align-center" href="https://github.com/alex-shpak/hugo-book/commit/7fda48e980b3daa75bc380837c103843272dfdb4" title='Last modified by root | June 26, 2022' target="_blank" rel="noopener">
-      <img src="/svg/calendar.svg" class="book-icon" alt="Calendar" />
-      <span>June 26, 2022</span>
+  <div><a class="flex align-center" href="https://github.com/alex-shpak/hugo-book/commit/9e6e03fd1634870dbede440916f19ee9176bb29e" title='Last modified by BiliKid | November 24, 2024' target="_blank" rel="noopener">
+      <img src="/svg/calendar.svg" class="book-icon" alt="" />
+      <span>November 24, 2024</span>
     </a>
   </div>
 
@@ -232,7 +249,7 @@ stateDiagram-v2
 
   <div>
     <a class="flex align-center" href="https://github.com/alex-shpak/hugo-book/edit/main/exampleSite/content/docs/shortcodes/mermaid.md" target="_blank" rel="noopener">
-      <img src="/svg/edit.svg" class="book-icon" alt="Edit" />
+      <img src="/svg/edit.svg" class="book-icon" alt="" />
       <span>Edit this page</span>
     </a>
   </div>
@@ -242,7 +259,7 @@ stateDiagram-v2
 
 
 
-  <script>(function(){function e(n){const e=window.getSelection(),t=document.createRange();t.selectNodeContents(n),e.removeAllRanges(),e.addRange(t)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script>
+  <script>(function(){function e(e){const t=window.getSelection(),n=document.createRange();n.selectNodeContents(e),t.removeAllRanges(),t.addRange(n)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){if(window.getSelection().toString())return;e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script>
 
 
  
@@ -260,25 +277,6 @@ stateDiagram-v2
       <label for="menu-control" class="hidden book-menu-overlay"></label>
     </div>
 
-    
-    <aside class="book-toc">
-      <div class="book-toc-content">
-        
-  
-<nav id="TableOfContents">
-  <ul>
-    <li><a href="#mermaid-chart">Mermaid Chart</a>
-      <ul>
-        <li><a href="#example">Example</a></li>
-      </ul>
-    </li>
-  </ul>
-</nav>
-
-
- 
-      </div>
-    </aside>
     
   </main>
 

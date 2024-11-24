@@ -1,21 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>lisp on BiliKid&#39;s blog</title>
+    <title>Lisp on BiliKid&#39;s blog</title>
     <link>https://bilikid.github.io/tags/lisp/</link>
-    <description>Recent content in lisp on BiliKid&#39;s blog</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 20 Oct 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://bilikid.github.io/tags/lisp/index.xml" rel="self" type="application/rss+xml" />
+    <description>Recent content in Lisp on BiliKid&#39;s blog</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 24 Nov 2024 10:35:18 +0800</lastBuildDate>
+    <atom:link href="https://bilikid.github.io/tags/lisp/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>a proof of “life is unpredictable”</title>
       <link>https://bilikid.github.io/posts/life-is-unpredictable/</link>
       <pubDate>Wed, 20 Oct 2021 00:00:00 +0000</pubDate>
-      
       <guid>https://bilikid.github.io/posts/life-is-unpredictable/</guid>
-      <description>Wanna known if a person’s life is predictable. Suppose there is a procedure like this:   \[P(l\quad p)=\begin{cases} true,\quad life \ is \ predictable &amp;amp;\\ false, \quad life \ is \ unpredictable &amp;amp; \end{cases}\]  and we got a procedure to test if it is correct:
-(define diag (lambda (p) (if (P p p) (other-than (p p)) false))) where other-than’s definition is:
-(define other-than (lambda (x) (if (eq? x &amp;#39;a) &amp;#39;b &amp;#39;a))) other-than is always output the opposite of input.</description>
+      <description>&lt;p&gt;Wanna known if a person’s life is predictable. Suppose there is a procedure like this:&#xA;&#xA;&lt;link rel=&#34;stylesheet&#34; href=&#34;https://bilikid.github.io/katex/katex.min.css&#34; /&gt;&#xA;&lt;script defer src=&#34;https://bilikid.github.io/katex/katex.min.js&#34;&gt;&lt;/script&gt;&#xA;&lt;script defer src=&#34;https://bilikid.github.io/katex/auto-render.min.js&#34; onload=&#34;renderMathInElement(document.body);&#34;&gt;&lt;/script&gt;&lt;span&gt;&#xA;  \(&#xA;P(l\quad p)=\begin{cases}&#xA;true,\quad life \ is \ predictable &amp;\\&#xA;false, \quad life \ is \ unpredictable &amp;&#xA;\end{cases}&#xA;\)&#xA;&lt;/span&gt;&#xA;&#xA;and we got a procedure to test if it is correct:&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;(define diag                &#xA;  (lambda (p)              &#xA;    (if (P p p)              &#xA;        (other-than (p p))    &#xA;        false)))&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;where other-than’s definition is:&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;(define other-than&#xA;  (lambda (x)&#xA;    (if (eq? x &amp;#39;a)&#xA;        &amp;#39;b&#xA;        &amp;#39;a)))&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;other-than is always output the opposite of input. so if applied diag to itself—(diag diag), and (P diag diag) get two possible value: if a person’s life is predictable, then other-than get the conflicting result; if a person’s life is unpredictable, then we get a false, so it is predicatable, which is also a conflict. Then we get to known life is unpredictable.&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

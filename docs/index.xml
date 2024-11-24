@@ -4,6 +4,8 @@
     <title>Docs on BiliKid&#39;s blog</title>
     <link>https://bilikid.github.io/docs/</link>
     <description>Recent content in Docs on BiliKid&#39;s blog</description>
-    <generator>Hugo -- gohugo.io</generator><atom:link href="https://bilikid.github.io/docs/index.xml" rel="self" type="application/rss+xml" />
+    <generator>Hugo</generator>
+    <language>en</language>
+    <atom:link href="https://bilikid.github.io/docs/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

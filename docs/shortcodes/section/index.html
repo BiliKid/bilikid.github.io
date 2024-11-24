@@ -3,20 +3,43 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Section #  Section renders pages in section as definition list, using title and description.
-Example #  {{&lt; section &gt;}}   First Page  First page # Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.">
-<meta name="theme-color" content="#FFFFFF">
-<meta name="color-scheme" content="light dark"><meta property="og:title" content="" />
-<meta property="og:description" content="" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://bilikid.github.io/docs/shortcodes/section/" />
+<meta name="description" content="
+  Section
+  #
 
+Section renders pages in section as definition list, using title and description. Optional param summary can be used to show or hide page summary
+
+  Example
+  #
+
+{{&lt; section [summary] &gt;}}
+
+
+  
+    First Page
+  
+  
+    
+  First page
+  #
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
+<meta name="color-scheme" content="light dark"><meta property="og:url" content="https://bilikid.github.io/docs/shortcodes/section/">
+  <meta property="og:site_name" content="BiliKid&#39;s blog">
+  <meta property="og:title" content="BiliKid&#39;s blog">
+  <meta property="og:description" content="Section # Section renders pages in section as definition list, using title and description. Optional param summary can be used to show or hide page summary
+Example # {{&lt; section [summary] &gt;}} First Page First page # Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="website">
 <title>Section | BiliKid&#39;s blog</title>
+<link rel="icon" href="/favicon.png" >
 <link rel="manifest" href="/manifest.json">
-<link rel="icon" href="/favicon.png" type="image/x-icon">
-<link rel="stylesheet" href="/book.min.82c5dbd23447cee0b4c2aa3ed08ce0961faa40e1fa370eee4f8c9f02e0d46b5f.css" integrity="sha256-gsXb0jRHzuC0wqo&#43;0Izglh&#43;qQOH6Nw7uT4yfAuDUa18=" crossorigin="anonymous">
-  <script defer src="/flexsearch.min.js"></script>
-  <script defer src="/en.search.min.a5ee05ce4f12b7caccd9e8fd6c13ef1e266f3ddc0b4318154a01e23b76121f6e.js" integrity="sha256-pe4Fzk8St8rM2ej9bBPvHiZvPdwLQxgVSgHiO3YSH24=" crossorigin="anonymous"></script>
+<link rel="canonical" href="https://bilikid.github.io/docs/shortcodes/section/">
+<link rel="stylesheet" href="/book.min.6c8b9d2a1fc95075ed7da46ca81060b39add8fff6741ac51259f768929281e2c.css" integrity="sha256-bIudKh/JUHXtfaRsqBBgs5rdj/9nQaxRJZ92iSkoHiw=" crossorigin="anonymous">
+  <script defer src="/fuse.min.js"></script>
+  <script defer src="/en.search.min.a61b5f14cc1f05308318622b4190229fcd686d84d9e96f2c3fe862dfc46b88f1.js" integrity="sha256-phtfFMwfBTCDGGIrQZAin81obYTZ6W8sP&#43;hi38RriPE=" crossorigin="anonymous"></script>
 
   <script defer src="/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js" integrity="sha256-b2&#43;Q/LjrHEnsOJg45rgB0N4ZQwuOUWkC&#43;NdcPIvZhzk=" crossorigin="anonymous"></script>
 <link rel="alternate" type="application/rss+xml" href="https://bilikid.github.io/docs/shortcodes/section/index.xml" title="BiliKid's blog" />
@@ -40,11 +63,12 @@ https://github.com/alex-shpak/hugo-book
 </h2>
 
 
-<div class="book-search">
+<div class="book-search hidden">
   <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
   <div class="book-search-spinner hidden"></div>
   <ul id="book-search-results"></ul>
 </div>
+<script>document.querySelector(".book-search").classList.remove("hidden")</script>
 
 
 
@@ -57,7 +81,6 @@ https://github.com/alex-shpak/hugo-book
 
 
 
-  
 
 
 
@@ -75,18 +98,17 @@ https://github.com/alex-shpak/hugo-book
 
 
 
-
   
 <ul>
   
   <li>
-    <a href="/posts/" >
+    <a href="/posts/"  >
         Blog
       </a>
   </li>
   
   <li>
-    <a href="https://github.com/BiliKid" target="_blank" rel="noopener">
+    <a href="https://github.com/BiliKid"  target="_blank" rel="noopener">
         Github
       </a>
   </li>
@@ -118,67 +140,58 @@ https://github.com/alex-shpak/hugo-book
     <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
   </label>
 
-  <strong>Section</strong>
+  <h3>Section</h3>
 
   <label for="toc-control">
-    
-    <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
     
   </label>
 </div>
 
 
   
-  <aside class="hidden clearfix">
-    
-  
-<nav id="TableOfContents">
-  <ul>
-    <li><a href="#section">Section</a>
-      <ul>
-        <li><a href="#example">Example</a></li>
-      </ul>
-    </li>
-  </ul>
-</nav>
-
-
-
-  </aside>
-  
  
       </header>
 
       
       
-  <article class="markdown"><h1 id="section">
+  <article class="markdown book-article"><h1 id="section">
   Section
   <a class="anchor" href="#section">#</a>
 </h1>
-<p>Section renders pages in section as definition list, using title and description.</p>
+<p>Section renders pages in section as definition list, using title and description. Optional param <code>summary</code> can be used to show or hide page summary</p>
 <h2 id="example">
   Example
   <a class="anchor" href="#example">#</a>
 </h2>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-tpl" data-lang="tpl"><span style="display:flex;"><span><span style="color:#75715e">{{</span><span style="color:#f92672">&lt;</span> <span style="color:#a6e22e">section</span> <span style="color:#f92672">&gt;</span><span style="color:#75715e">}}</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-tpl" data-lang="tpl"><span style="display:flex;"><span><span style="color:#75715e">{{</span><span style="color:#f92672">&lt;</span> <span style="color:#a6e22e">section</span> <span style="color:#f92672">[</span><span style="color:#a6e22e">summary</span><span style="color:#f92672">]</span> <span style="color:#f92672">&gt;</span><span style="color:#75715e">}}</span>
 </span></span></code></pre></div><dl>
 
   <dt>
     <a href="/docs/shortcodes/section/first-page/">First Page</a>
   </dt>
   <dd class="markdown-inner">
-    First page #  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
- Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    <h1 id="first-page">
+  First page
+  <a class="anchor" href="#first-page">#</a>
+</h1>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+<!--more-->
+<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
   </dd>
-
+  
   <dt>
     <a href="/docs/shortcodes/section/second-page/">Second Page</a>
   </dt>
   <dd class="markdown-inner">
-    Second Page #  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
- Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    <h1 id="second-page">
+  Second Page
+  <a class="anchor" href="#second-page">#</a>
+</h1>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+<!--more-->
+<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
   </dd>
-
+  
 </dl>
 
 </article>
@@ -190,9 +203,9 @@ https://github.com/alex-shpak/hugo-book
   <div class="flex flex-wrap justify-between">
 
 
-  <div><a class="flex align-center" href="https://github.com/alex-shpak/hugo-book/commit/7fda48e980b3daa75bc380837c103843272dfdb4" title='Last modified by root | June 26, 2022' target="_blank" rel="noopener">
-      <img src="/svg/calendar.svg" class="book-icon" alt="Calendar" />
-      <span>June 26, 2022</span>
+  <div><a class="flex align-center" href="https://github.com/alex-shpak/hugo-book/commit/9e6e03fd1634870dbede440916f19ee9176bb29e" title='Last modified by BiliKid | November 24, 2024' target="_blank" rel="noopener">
+      <img src="/svg/calendar.svg" class="book-icon" alt="" />
+      <span>November 24, 2024</span>
     </a>
   </div>
 
@@ -200,7 +213,7 @@ https://github.com/alex-shpak/hugo-book
 
   <div>
     <a class="flex align-center" href="https://github.com/alex-shpak/hugo-book/edit/main/exampleSite/content/docs/shortcodes/section/_index.md" target="_blank" rel="noopener">
-      <img src="/svg/edit.svg" class="book-icon" alt="Edit" />
+      <img src="/svg/edit.svg" class="book-icon" alt="" />
       <span>Edit this page</span>
     </a>
   </div>
@@ -210,7 +223,7 @@ https://github.com/alex-shpak/hugo-book
 
 
 
-  <script>(function(){function e(n){const e=window.getSelection(),t=document.createRange();t.selectNodeContents(n),e.removeAllRanges(),e.addRange(t)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script>
+  <script>(function(){function e(e){const t=window.getSelection(),n=document.createRange();n.selectNodeContents(e),t.removeAllRanges(),t.addRange(n)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){if(window.getSelection().toString())return;e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script>
 
 
  
@@ -228,25 +241,6 @@ https://github.com/alex-shpak/hugo-book
       <label for="menu-control" class="hidden book-menu-overlay"></label>
     </div>
 
-    
-    <aside class="book-toc">
-      <div class="book-toc-content">
-        
-  
-<nav id="TableOfContents">
-  <ul>
-    <li><a href="#section">Section</a>
-      <ul>
-        <li><a href="#example">Example</a></li>
-      </ul>
-    </li>
-  </ul>
-</nav>
-
-
- 
-      </div>
-    </aside>
     
   </main>
 

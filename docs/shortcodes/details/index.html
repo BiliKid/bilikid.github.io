@@ -3,23 +3,50 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Details #  Details shortcode is a helper for details html5 element. It is going to replace expand shortcode.
-Example #  {{&lt; details &#34;Title&#34; [open] &gt;}} ## Markdown content Lorem markdownum insigne... {{&lt; /details &gt;}} {{&lt; details title=&#34;Title&#34; open=true &gt;}} ## Markdown content Lorem markdownum insigne... {{&lt; /details &gt;}} Title Markdown content #  Lorem markdownum insigne&hellip;   ">
-<meta name="theme-color" content="#FFFFFF">
-<meta name="color-scheme" content="light dark"><meta property="og:title" content="" />
-<meta property="og:description" content="Details #  Details shortcode is a helper for details html5 element. It is going to replace expand shortcode.
-Example #  {{&lt; details &#34;Title&#34; [open] &gt;}} ## Markdown content Lorem markdownum insigne... {{&lt; /details &gt;}} {{&lt; details title=&#34;Title&#34; open=true &gt;}} ## Markdown content Lorem markdownum insigne... {{&lt; /details &gt;}} Title Markdown content #  Lorem markdownum insigne&hellip;   " />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://bilikid.github.io/docs/shortcodes/details/" /><meta property="article:section" content="docs" />
+<meta name="description" content="
+  Details
+  #
 
-<meta property="article:modified_time" content="2022-06-26T20:39:08+08:00" />
+Details shortcode is a helper for details html5 element. It is going to replace expand shortcode.
 
+  Example
+  #
+
+{{% details &#34;Title&#34; [open] %}}
+## Markdown content
+Lorem markdownum insigne...
+{{% /details %}}
+{{% details title=&#34;Title&#34; open=true %}}
+## Markdown content
+Lorem markdownum insigne...
+{{% /details %}}
+Title
+  
+
+  Markdown content
+  #
+
+Lorem markdownum insigne&hellip;
+  
+">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
+<meta name="color-scheme" content="light dark"><meta property="og:url" content="https://bilikid.github.io/docs/shortcodes/details/">
+  <meta property="og:site_name" content="BiliKid&#39;s blog">
+  <meta property="og:title" content="BiliKid&#39;s blog">
+  <meta property="og:description" content="Details # Details shortcode is a helper for details html5 element. It is going to replace expand shortcode.
+Example # {{% details &#34;Title&#34; [open] %}} ## Markdown content Lorem markdownum insigne... {{% /details %}} {{% details title=&#34;Title&#34; open=true %}} ## Markdown content Lorem markdownum insigne... {{% /details %}} Title Markdown content # Lorem markdownum insigne…">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="docs">
+    <meta property="article:modified_time" content="2024-11-24T10:35:18+08:00">
 <title>Details | BiliKid&#39;s blog</title>
+<link rel="icon" href="/favicon.png" >
 <link rel="manifest" href="/manifest.json">
-<link rel="icon" href="/favicon.png" type="image/x-icon">
-<link rel="stylesheet" href="/book.min.82c5dbd23447cee0b4c2aa3ed08ce0961faa40e1fa370eee4f8c9f02e0d46b5f.css" integrity="sha256-gsXb0jRHzuC0wqo&#43;0Izglh&#43;qQOH6Nw7uT4yfAuDUa18=" crossorigin="anonymous">
-  <script defer src="/flexsearch.min.js"></script>
-  <script defer src="/en.search.min.a5ee05ce4f12b7caccd9e8fd6c13ef1e266f3ddc0b4318154a01e23b76121f6e.js" integrity="sha256-pe4Fzk8St8rM2ej9bBPvHiZvPdwLQxgVSgHiO3YSH24=" crossorigin="anonymous"></script>
+<link rel="canonical" href="https://bilikid.github.io/docs/shortcodes/details/">
+<link rel="stylesheet" href="/book.min.6c8b9d2a1fc95075ed7da46ca81060b39add8fff6741ac51259f768929281e2c.css" integrity="sha256-bIudKh/JUHXtfaRsqBBgs5rdj/9nQaxRJZ92iSkoHiw=" crossorigin="anonymous">
+  <script defer src="/fuse.min.js"></script>
+  <script defer src="/en.search.min.a61b5f14cc1f05308318622b4190229fcd686d84d9e96f2c3fe862dfc46b88f1.js" integrity="sha256-phtfFMwfBTCDGGIrQZAin81obYTZ6W8sP&#43;hi38RriPE=" crossorigin="anonymous"></script>
 
   <script defer src="/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js" integrity="sha256-b2&#43;Q/LjrHEnsOJg45rgB0N4ZQwuOUWkC&#43;NdcPIvZhzk=" crossorigin="anonymous"></script>
 <!--
@@ -42,11 +69,12 @@ https://github.com/alex-shpak/hugo-book
 </h2>
 
 
-<div class="book-search">
+<div class="book-search hidden">
   <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
   <div class="book-search-spinner hidden"></div>
   <ul id="book-search-results"></ul>
 </div>
+<script>document.querySelector(".book-search").classList.remove("hidden")</script>
 
 
 
@@ -59,7 +87,6 @@ https://github.com/alex-shpak/hugo-book
 
 
 
-  
 
 
 
@@ -77,18 +104,17 @@ https://github.com/alex-shpak/hugo-book
 
 
 
-
   
 <ul>
   
   <li>
-    <a href="/posts/" >
+    <a href="/posts/"  >
         Blog
       </a>
   </li>
   
   <li>
-    <a href="https://github.com/BiliKid" target="_blank" rel="noopener">
+    <a href="https://github.com/BiliKid"  target="_blank" rel="noopener">
         Github
       </a>
   </li>
@@ -120,40 +146,21 @@ https://github.com/alex-shpak/hugo-book
     <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
   </label>
 
-  <strong>Details</strong>
+  <h3>Details</h3>
 
   <label for="toc-control">
-    
-    <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
     
   </label>
 </div>
 
 
   
-  <aside class="hidden clearfix">
-    
-  
-<nav id="TableOfContents">
-  <ul>
-    <li><a href="#details">Details</a>
-      <ul>
-        <li><a href="#example">Example</a></li>
-      </ul>
-    </li>
-  </ul>
-</nav>
-
-
-
-  </aside>
-  
  
       </header>
 
       
       
-  <article class="markdown"><h1 id="details">
+  <article class="markdown book-article"><h1 id="details">
   Details
   <a class="anchor" href="#details">#</a>
 </h1>
@@ -162,24 +169,23 @@ https://github.com/alex-shpak/hugo-book
   Example
   <a class="anchor" href="#example">#</a>
 </h2>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-tpl" data-lang="tpl"><span style="display:flex;"><span><span style="color:#75715e">{{</span><span style="color:#f92672">&lt;</span> <span style="color:#a6e22e">details</span> <span style="color:#e6db74">&#34;Title&#34;</span> <span style="color:#f92672">[</span><span style="color:#a6e22e">open</span><span style="color:#f92672">]</span> <span style="color:#f92672">&gt;</span><span style="color:#75715e">}}</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-tpl" data-lang="tpl"><span style="display:flex;"><span><span style="color:#75715e">{{</span><span style="color:#f92672">%</span> <span style="color:#a6e22e">details</span> <span style="color:#e6db74">&#34;Title&#34;</span> <span style="color:#f92672">[</span><span style="color:#a6e22e">open</span><span style="color:#f92672">]</span> <span style="color:#f92672">%</span><span style="color:#75715e">}}</span>
 </span></span><span style="display:flex;"><span>## Markdown content
 </span></span><span style="display:flex;"><span>Lorem markdownum insigne...
-</span></span><span style="display:flex;"><span><span style="color:#75715e">{{</span><span style="color:#f92672">&lt;</span> <span style="color:#f92672">/</span><span style="color:#a6e22e">details</span> <span style="color:#f92672">&gt;</span><span style="color:#75715e">}}</span>
-</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-tpl" data-lang="tpl"><span style="display:flex;"><span><span style="color:#75715e">{{</span><span style="color:#f92672">&lt;</span> <span style="color:#a6e22e">details</span> <span style="color:#a6e22e">title</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Title&#34;</span> <span style="color:#a6e22e">open</span><span style="color:#f92672">=</span><span style="color:#66d9ef">true</span> <span style="color:#f92672">&gt;</span><span style="color:#75715e">}}</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">{{</span><span style="color:#f92672">%</span> <span style="color:#f92672">/</span><span style="color:#a6e22e">details</span> <span style="color:#f92672">%</span><span style="color:#75715e">}}</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-tpl" data-lang="tpl"><span style="display:flex;"><span><span style="color:#75715e">{{</span><span style="color:#f92672">%</span> <span style="color:#a6e22e">details</span> <span style="color:#a6e22e">title</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Title&#34;</span> <span style="color:#a6e22e">open</span><span style="color:#f92672">=</span><span style="color:#66d9ef">true</span> <span style="color:#f92672">%</span><span style="color:#75715e">}}</span>
 </span></span><span style="display:flex;"><span>## Markdown content
 </span></span><span style="display:flex;"><span>Lorem markdownum insigne...
-</span></span><span style="display:flex;"><span><span style="color:#75715e">{{</span><span style="color:#f92672">&lt;</span> <span style="color:#f92672">/</span><span style="color:#a6e22e">details</span> <span style="color:#f92672">&gt;</span><span style="color:#75715e">}}</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">{{</span><span style="color:#f92672">%</span> <span style="color:#f92672">/</span><span style="color:#a6e22e">details</span> <span style="color:#f92672">%</span><span style="color:#75715e">}}</span>
 </span></span></code></pre></div><details open><summary>Title</summary>
   <div class="markdown-inner">
-    <h2 id="markdown-content">
+<h2 id="markdown-content">
   Markdown content
   <a class="anchor" href="#markdown-content">#</a>
 </h2>
-<p>Lorem markdownum insigne&hellip;
+<p>Lorem markdownum insigne&hellip;</p>
   </div>
 </details>
-
 </article>
  
       
@@ -189,9 +195,9 @@ https://github.com/alex-shpak/hugo-book
   <div class="flex flex-wrap justify-between">
 
 
-  <div><a class="flex align-center" href="https://github.com/alex-shpak/hugo-book/commit/7fda48e980b3daa75bc380837c103843272dfdb4" title='Last modified by root | June 26, 2022' target="_blank" rel="noopener">
-      <img src="/svg/calendar.svg" class="book-icon" alt="Calendar" />
-      <span>June 26, 2022</span>
+  <div><a class="flex align-center" href="https://github.com/alex-shpak/hugo-book/commit/9e6e03fd1634870dbede440916f19ee9176bb29e" title='Last modified by BiliKid | November 24, 2024' target="_blank" rel="noopener">
+      <img src="/svg/calendar.svg" class="book-icon" alt="" />
+      <span>November 24, 2024</span>
     </a>
   </div>
 
@@ -199,7 +205,7 @@ https://github.com/alex-shpak/hugo-book
 
   <div>
     <a class="flex align-center" href="https://github.com/alex-shpak/hugo-book/edit/main/exampleSite/content/docs/shortcodes/details.md" target="_blank" rel="noopener">
-      <img src="/svg/edit.svg" class="book-icon" alt="Edit" />
+      <img src="/svg/edit.svg" class="book-icon" alt="" />
       <span>Edit this page</span>
     </a>
   </div>
@@ -209,7 +215,7 @@ https://github.com/alex-shpak/hugo-book
 
 
 
-  <script>(function(){function e(n){const e=window.getSelection(),t=document.createRange();t.selectNodeContents(n),e.removeAllRanges(),e.addRange(t)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script>
+  <script>(function(){function e(e){const t=window.getSelection(),n=document.createRange();n.selectNodeContents(e),t.removeAllRanges(),t.addRange(n)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){if(window.getSelection().toString())return;e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script>
 
 
  
@@ -227,25 +233,6 @@ https://github.com/alex-shpak/hugo-book
       <label for="menu-control" class="hidden book-menu-overlay"></label>
     </div>
 
-    
-    <aside class="book-toc">
-      <div class="book-toc-content">
-        
-  
-<nav id="TableOfContents">
-  <ul>
-    <li><a href="#details">Details</a>
-      <ul>
-        <li><a href="#example">Example</a></li>
-      </ul>
-    </li>
-  </ul>
-</nav>
-
-
- 
-      </div>
-    </aside>
     
   </main>
 

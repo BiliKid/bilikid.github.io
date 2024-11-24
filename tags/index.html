@@ -4,18 +4,20 @@
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="">
-<meta name="theme-color" content="#FFFFFF">
-<meta name="color-scheme" content="light dark"><meta property="og:title" content="Tags" />
-<meta property="og:description" content="" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://bilikid.github.io/tags/" />
-
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
+<meta name="color-scheme" content="light dark"><meta property="og:url" content="https://bilikid.github.io/tags/">
+  <meta property="og:site_name" content="BiliKid&#39;s blog">
+  <meta property="og:title" content="Tags">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="website">
 <title>Tags | BiliKid&#39;s blog</title>
+<link rel="icon" href="/favicon.png" >
 <link rel="manifest" href="/manifest.json">
-<link rel="icon" href="/favicon.png" type="image/x-icon">
-<link rel="stylesheet" href="/book.min.82c5dbd23447cee0b4c2aa3ed08ce0961faa40e1fa370eee4f8c9f02e0d46b5f.css" integrity="sha256-gsXb0jRHzuC0wqo&#43;0Izglh&#43;qQOH6Nw7uT4yfAuDUa18=" crossorigin="anonymous">
-  <script defer src="/flexsearch.min.js"></script>
-  <script defer src="/en.search.min.a5ee05ce4f12b7caccd9e8fd6c13ef1e266f3ddc0b4318154a01e23b76121f6e.js" integrity="sha256-pe4Fzk8St8rM2ej9bBPvHiZvPdwLQxgVSgHiO3YSH24=" crossorigin="anonymous"></script>
+<link rel="canonical" href="https://bilikid.github.io/tags/">
+<link rel="stylesheet" href="/book.min.6c8b9d2a1fc95075ed7da46ca81060b39add8fff6741ac51259f768929281e2c.css" integrity="sha256-bIudKh/JUHXtfaRsqBBgs5rdj/9nQaxRJZ92iSkoHiw=" crossorigin="anonymous">
+  <script defer src="/fuse.min.js"></script>
+  <script defer src="/en.search.min.a61b5f14cc1f05308318622b4190229fcd686d84d9e96f2c3fe862dfc46b88f1.js" integrity="sha256-phtfFMwfBTCDGGIrQZAin81obYTZ6W8sP&#43;hi38RriPE=" crossorigin="anonymous"></script>
 
   <script defer src="/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js" integrity="sha256-b2&#43;Q/LjrHEnsOJg45rgB0N4ZQwuOUWkC&#43;NdcPIvZhzk=" crossorigin="anonymous"></script>
 <link rel="alternate" type="application/rss+xml" href="https://bilikid.github.io/tags/index.xml" title="BiliKid's blog" />
@@ -39,11 +41,12 @@ https://github.com/alex-shpak/hugo-book
 </h2>
 
 
-<div class="book-search">
+<div class="book-search hidden">
   <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
   <div class="book-search-spinner hidden"></div>
   <ul id="book-search-results"></ul>
 </div>
+<script>document.querySelector(".book-search").classList.remove("hidden")</script>
 
 
 
@@ -56,7 +59,6 @@ https://github.com/alex-shpak/hugo-book
 
 
 
-  
 
 
 
@@ -74,18 +76,17 @@ https://github.com/alex-shpak/hugo-book
 
 
 
-
   
 <ul>
   
   <li>
-    <a href="/posts/" >
+    <a href="/posts/"  >
         Blog
       </a>
   </li>
   
   <li>
-    <a href="https://github.com/BiliKid" target="_blank" rel="noopener">
+    <a href="https://github.com/BiliKid"  target="_blank" rel="noopener">
         Github
       </a>
   </li>
@@ -117,60 +118,14 @@ https://github.com/alex-shpak/hugo-book
     <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
   </label>
 
-  <strong>Tags</strong>
+  <h3>Tags</h3>
 
   <label for="toc-control">
-    
-    <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
     
   </label>
 </div>
 
 
-  
-  <aside class="hidden clearfix">
-    
-  <nav>
-  <ul>
-  
-    
-    <li class="book-section-flat">
-      <strong>Categories</strong>
-      <ul>
-      
-        <li class="flex justify-between">
-          <a href="/categories/idea/">idea</a>
-          <span>1</span>
-        </li>
-      
-      </ul>
-    </li>
-    
-  
-    
-    <li class="book-section-flat">
-      <strong>Tags</strong>
-      <ul>
-      
-        <li class="flex justify-between">
-          <a href="/tags/lisp/">lisp</a>
-          <span>1</span>
-        </li>
-      
-        <li class="flex justify-between">
-          <a href="/tags/scheme/">scheme</a>
-          <span>1</span>
-        </li>
-      
-      </ul>
-    </li>
-    
-  
-  </ul>
-</nav>
-
-
-  </aside>
   
  
       </header>
@@ -180,18 +135,19 @@ https://github.com/alex-shpak/hugo-book
   
   <article class="markdown book-post">
     <h2>
-      <a href="/tags/lisp/">lisp</a>
+      <a href="/tags/lisp/">Lisp</a>
     </h2>
     
-  <h5>October 20, 2021</h5>
+  <div class="flex align-center text-small book-post-date">
+    <img src="/svg/calendar.svg" class="book-icon " alt="" />
+    <span>October 20, 2021</span>
+  </div>
 
 
 
   
 
   
-
-
 
 
     <p>
@@ -200,18 +156,19 @@ https://github.com/alex-shpak/hugo-book
   
   <article class="markdown book-post">
     <h2>
-      <a href="/tags/scheme/">scheme</a>
+      <a href="/tags/scheme/">Scheme</a>
     </h2>
     
-  <h5>October 20, 2021</h5>
+  <div class="flex align-center text-small book-post-date">
+    <img src="/svg/calendar.svg" class="book-icon " alt="" />
+    <span>October 20, 2021</span>
+  </div>
 
 
 
   
 
   
-
-
 
 
     <p>
@@ -235,7 +192,7 @@ https://github.com/alex-shpak/hugo-book
 
 
 
-  <script>(function(){function e(n){const e=window.getSelection(),t=document.createRange();t.selectNodeContents(n),e.removeAllRanges(),e.addRange(t)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script>
+  <script>(function(){function e(e){const t=window.getSelection(),n=document.createRange();n.selectNodeContents(e),t.removeAllRanges(),t.addRange(n)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){if(window.getSelection().toString())return;e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script>
 
 
  
@@ -249,52 +206,6 @@ https://github.com/alex-shpak/hugo-book
       <label for="menu-control" class="hidden book-menu-overlay"></label>
     </div>
 
-    
-    <aside class="book-toc">
-      <div class="book-toc-content">
-        
-  <nav>
-  <ul>
-  
-    
-    <li class="book-section-flat">
-      <strong>Categories</strong>
-      <ul>
-      
-        <li class="flex justify-between">
-          <a href="/categories/idea/">idea</a>
-          <span>1</span>
-        </li>
-      
-      </ul>
-    </li>
-    
-  
-    
-    <li class="book-section-flat">
-      <strong>Tags</strong>
-      <ul>
-      
-        <li class="flex justify-between">
-          <a href="/tags/lisp/">lisp</a>
-          <span>1</span>
-        </li>
-      
-        <li class="flex justify-between">
-          <a href="/tags/scheme/">scheme</a>
-          <span>1</span>
-        </li>
-      
-      </ul>
-    </li>
-    
-  
-  </ul>
-</nav>
-
- 
-      </div>
-    </aside>
     
   </main>
 

@@ -3,23 +3,57 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Columns #  Columns help organize shorter pieces of content horizontally for readability.
-{{&lt; columns &gt;}} &lt;!-- begin columns block --&gt; # Left Content Lorem markdownum insigne...  &lt;---&gt; &lt;!-- magic separator, between columns --&gt;  # Mid Content Lorem markdownum insigne...  &lt;---&gt; &lt;!-- magic separator, between columns --&gt;  # Right Content Lorem markdownum insigne... {{&lt; /columns &gt;}} Example #  Left Content #  Lorem markdownum insigne. Olympo signis Delphis!">
-<meta name="theme-color" content="#FFFFFF">
-<meta name="color-scheme" content="light dark"><meta property="og:title" content="" />
-<meta property="og:description" content="Columns #  Columns help organize shorter pieces of content horizontally for readability.
-{{&lt; columns &gt;}} &lt;!-- begin columns block --&gt; # Left Content Lorem markdownum insigne...  &lt;---&gt; &lt;!-- magic separator, between columns --&gt;  # Mid Content Lorem markdownum insigne...  &lt;---&gt; &lt;!-- magic separator, between columns --&gt;  # Right Content Lorem markdownum insigne... {{&lt; /columns &gt;}} Example #  Left Content #  Lorem markdownum insigne. Olympo signis Delphis!" />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://bilikid.github.io/docs/shortcodes/columns/" /><meta property="article:section" content="docs" />
+<meta name="description" content="
+  Columns
+  #
 
-<meta property="article:modified_time" content="2022-06-26T20:39:08+08:00" />
+Columns help organize shorter pieces of content horizontally for readability.
 
+  Example
+  #
+
+{{% columns [ratio=&#34;1:1&#34;] [class=&#34;...&#34;] %}} &lt;!-- begin columns block --&gt;
+# Left Content
+Lorem markdownum insigne...
+
+&lt;---&gt; &lt;!-- magic separator, between columns --&gt;
+
+# Mid Content
+Lorem markdownum insigne...
+
+&lt;---&gt; &lt;!-- magic separator, between columns --&gt;
+
+# Right Content
+Lorem markdownum insigne...
+{{% /columns %}}
+
+
+
+  Left Content
+  #
+
+Lorem markdownum insigne. Olympo signis Delphis! Retexi Nereius nova develat
+stringit, frustra Saturnius uteroque inter! Oculis non ritibus Telethusa
+protulit, sed sed aere valvis inhaesuro Pallas animam: qui quid, ignes.
+Miseratus fonte Ditis conubia.">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
+<meta name="color-scheme" content="light dark"><meta property="og:url" content="https://bilikid.github.io/docs/shortcodes/columns/">
+  <meta property="og:site_name" content="BiliKid&#39;s blog">
+  <meta property="og:title" content="BiliKid&#39;s blog">
+  <meta property="og:description" content="Columns # Columns help organize shorter pieces of content horizontally for readability.
+Example # {{% columns [ratio=&#34;1:1&#34;] [class=&#34;...&#34;] %}} &lt;!-- begin columns block --&gt; # Left Content Lorem markdownum insigne... &lt;---&gt; &lt;!-- magic separator, between columns --&gt; # Mid Content Lorem markdownum insigne... &lt;---&gt; &lt;!-- magic separator, between columns --&gt; # Right Content Lorem markdownum insigne... {{% /columns %}} Left Content # Lorem markdownum insigne. Olympo signis Delphis! Retexi Nereius nova develat stringit, frustra Saturnius uteroque inter! Oculis non ritibus Telethusa protulit, sed sed aere valvis inhaesuro Pallas animam: qui quid, ignes. Miseratus fonte Ditis conubia.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="docs">
+    <meta property="article:modified_time" content="2024-11-24T10:35:18+08:00">
 <title>Columns | BiliKid&#39;s blog</title>
+<link rel="icon" href="/favicon.png" >
 <link rel="manifest" href="/manifest.json">
-<link rel="icon" href="/favicon.png" type="image/x-icon">
-<link rel="stylesheet" href="/book.min.82c5dbd23447cee0b4c2aa3ed08ce0961faa40e1fa370eee4f8c9f02e0d46b5f.css" integrity="sha256-gsXb0jRHzuC0wqo&#43;0Izglh&#43;qQOH6Nw7uT4yfAuDUa18=" crossorigin="anonymous">
-  <script defer src="/flexsearch.min.js"></script>
-  <script defer src="/en.search.min.a5ee05ce4f12b7caccd9e8fd6c13ef1e266f3ddc0b4318154a01e23b76121f6e.js" integrity="sha256-pe4Fzk8St8rM2ej9bBPvHiZvPdwLQxgVSgHiO3YSH24=" crossorigin="anonymous"></script>
+<link rel="canonical" href="https://bilikid.github.io/docs/shortcodes/columns/">
+<link rel="stylesheet" href="/book.min.6c8b9d2a1fc95075ed7da46ca81060b39add8fff6741ac51259f768929281e2c.css" integrity="sha256-bIudKh/JUHXtfaRsqBBgs5rdj/9nQaxRJZ92iSkoHiw=" crossorigin="anonymous">
+  <script defer src="/fuse.min.js"></script>
+  <script defer src="/en.search.min.a61b5f14cc1f05308318622b4190229fcd686d84d9e96f2c3fe862dfc46b88f1.js" integrity="sha256-phtfFMwfBTCDGGIrQZAin81obYTZ6W8sP&#43;hi38RriPE=" crossorigin="anonymous"></script>
 
   <script defer src="/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js" integrity="sha256-b2&#43;Q/LjrHEnsOJg45rgB0N4ZQwuOUWkC&#43;NdcPIvZhzk=" crossorigin="anonymous"></script>
 <!--
@@ -42,11 +76,12 @@ https://github.com/alex-shpak/hugo-book
 </h2>
 
 
-<div class="book-search">
+<div class="book-search hidden">
   <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
   <div class="book-search-spinner hidden"></div>
   <ul id="book-search-results"></ul>
 </div>
+<script>document.querySelector(".book-search").classList.remove("hidden")</script>
 
 
 
@@ -59,7 +94,6 @@ https://github.com/alex-shpak/hugo-book
 
 
 
-  
 
 
 
@@ -77,18 +111,17 @@ https://github.com/alex-shpak/hugo-book
 
 
 
-
   
 <ul>
   
   <li>
-    <a href="/posts/" >
+    <a href="/posts/"  >
         Blog
       </a>
   </li>
   
   <li>
-    <a href="https://github.com/BiliKid" target="_blank" rel="noopener">
+    <a href="https://github.com/BiliKid"  target="_blank" rel="noopener">
         Github
       </a>
   </li>
@@ -120,45 +153,30 @@ https://github.com/alex-shpak/hugo-book
     <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
   </label>
 
-  <strong>Columns</strong>
+  <h3>Columns</h3>
 
   <label for="toc-control">
-    
-    <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
     
   </label>
 </div>
 
 
   
-  <aside class="hidden clearfix">
-    
-  
-<nav id="TableOfContents">
-  <ul>
-    <li><a href="#columns">Columns</a>
-      <ul>
-        <li><a href="#example">Example</a></li>
-      </ul>
-    </li>
-  </ul>
-</nav>
-
-
-
-  </aside>
-  
  
       </header>
 
       
       
-  <article class="markdown"><h1 id="columns">
+  <article class="markdown book-article"><h1 id="columns">
   Columns
   <a class="anchor" href="#columns">#</a>
 </h1>
 <p>Columns help organize shorter pieces of content horizontally for readability.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>{{&lt; <span style="color:#f92672">columns</span> &gt;}} <span style="color:#75715e">&lt;!-- begin columns block --&gt;</span>
+<h2 id="example">
+  Example
+  <a class="anchor" href="#example">#</a>
+</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>{{% columns [ratio=&#34;1:1&#34;] [class=&#34;...&#34;] %}} <span style="color:#75715e">&lt;!-- begin columns block --&gt;</span>
 </span></span><span style="display:flex;"><span># Left Content
 </span></span><span style="display:flex;"><span>Lorem markdownum insigne...
 </span></span><span style="display:flex;"><span>
@@ -171,46 +189,76 @@ https://github.com/alex-shpak/hugo-book
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span># Right Content
 </span></span><span style="display:flex;"><span>Lorem markdownum insigne...
-</span></span><span style="display:flex;"><span>{{&lt; /<span style="color:#f92672">columns</span> &gt;}}
-</span></span></code></pre></div><h2 id="example">
-  Example
-  <a class="anchor" href="#example">#</a>
-</h2>
-<div class="book-columns flex flex-wrap">
-
-  <div class="flex-even markdown-inner">
-    <h2 id="left-content">
+</span></span><span style="display:flex;"><span>{{% /columns %}}
+</span></span></code></pre></div><div class="book-columns flex flex-wrap">
+<div class="flex-even markdown-inner" style="flex-grow: 1;">
+<h3 id="left-content">
   Left Content
   <a class="anchor" href="#left-content">#</a>
-</h2>
+</h3>
 <p>Lorem markdownum insigne. Olympo signis Delphis! Retexi Nereius nova develat
 stringit, frustra Saturnius uteroque inter! Oculis non ritibus Telethusa
 protulit, sed sed aere valvis inhaesuro Pallas animam: qui <em>quid</em>, ignes.
-Miseratus fonte Ditis conubia.
+Miseratus fonte Ditis conubia.</p>
   </div>
-
-  <div class="flex-even markdown-inner">
-    <h2 id="mid-content">
+<div class="flex-even markdown-inner" style="flex-grow: 1;">
+<h3 id="mid-content">
   Mid Content
   <a class="anchor" href="#mid-content">#</a>
-</h2>
+</h3>
 <p>Lorem markdownum insigne. Olympo signis Delphis! Retexi Nereius nova develat
-stringit, frustra Saturnius uteroque inter!
+stringit, frustra Saturnius uteroque inter!</p>
   </div>
-
-  <div class="flex-even markdown-inner">
-    <h2 id="right-content">
+<div class="flex-even markdown-inner" style="flex-grow: 1;">
+<h3 id="right-content">
   Right Content
   <a class="anchor" href="#right-content">#</a>
-</h2>
+</h3>
 <p>Lorem markdownum insigne. Olympo signis Delphis! Retexi Nereius nova develat
 stringit, frustra Saturnius uteroque inter! Oculis non ritibus Telethusa
 protulit, sed sed aere valvis inhaesuro Pallas animam: qui <em>quid</em>, ignes.
-Miseratus fonte Ditis conubia.
+Miseratus fonte Ditis conubia.</p>
   </div>
-
 </div>
-
+<h2 id="settings-size-ratio-for-columns">
+  Settings size ratio for columns
+  <a class="anchor" href="#settings-size-ratio-for-columns">#</a>
+</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>{{% columns ratio=&#34;1:2&#34; %}} <span style="color:#75715e">&lt;!-- begin columns block --&gt;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>## x1 Column
+</span></span><span style="display:flex;"><span>Lorem markdownum insigne...
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">---</span>&gt; <span style="color:#75715e">&lt;!-- magic separator, between columns --&gt;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>## x2 Column
+</span></span><span style="display:flex;"><span>Lorem markdownum insigne...
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>{{% /columns %}}
+</span></span></code></pre></div><div class="book-columns flex flex-wrap">
+<div class="flex-even markdown-inner" style="flex-grow: 1;">
+<h3 id="x1-column">
+  x1 Column
+  <a class="anchor" href="#x1-column">#</a>
+</h3>
+<p>Lorem markdownum insigne. Olympo signis Delphis! Retexi Nereius nova develat
+stringit, frustra Saturnius uteroque inter! Oculis non ritibus Telethusa
+protulit, sed sed aere valvis inhaesuro Pallas animam: qui <em>quid</em>, ignes.
+Miseratus fonte Ditis conubia.</p>
+  </div>
+<div class="flex-even markdown-inner" style="flex-grow: 2;">
+<h3 id="x2-column">
+  x2 Column
+  <a class="anchor" href="#x2-column">#</a>
+</h3>
+<p>Lorem markdownum insigne. Olympo signis Delphis! Retexi Nereius nova develat
+stringit, frustra Saturnius uteroque inter!</p>
+<p>Lorem markdownum insigne. Olympo signis Delphis! Retexi Nereius nova develat
+stringit, frustra Saturnius uteroque inter! Oculis non ritibus Telethusa
+protulit, sed sed aere valvis inhaesuro Pallas animam: qui <em>quid</em>, ignes.
+Miseratus fonte Ditis conubia.</p>
+  </div>
+</div>
 </article>
  
       
@@ -220,9 +268,9 @@ Miseratus fonte Ditis conubia.
   <div class="flex flex-wrap justify-between">
 
 
-  <div><a class="flex align-center" href="https://github.com/alex-shpak/hugo-book/commit/7fda48e980b3daa75bc380837c103843272dfdb4" title='Last modified by root | June 26, 2022' target="_blank" rel="noopener">
-      <img src="/svg/calendar.svg" class="book-icon" alt="Calendar" />
-      <span>June 26, 2022</span>
+  <div><a class="flex align-center" href="https://github.com/alex-shpak/hugo-book/commit/9e6e03fd1634870dbede440916f19ee9176bb29e" title='Last modified by BiliKid | November 24, 2024' target="_blank" rel="noopener">
+      <img src="/svg/calendar.svg" class="book-icon" alt="" />
+      <span>November 24, 2024</span>
     </a>
   </div>
 
@@ -230,7 +278,7 @@ Miseratus fonte Ditis conubia.
 
   <div>
     <a class="flex align-center" href="https://github.com/alex-shpak/hugo-book/edit/main/exampleSite/content/docs/shortcodes/columns.md" target="_blank" rel="noopener">
-      <img src="/svg/edit.svg" class="book-icon" alt="Edit" />
+      <img src="/svg/edit.svg" class="book-icon" alt="" />
       <span>Edit this page</span>
     </a>
   </div>
@@ -240,7 +288,7 @@ Miseratus fonte Ditis conubia.
 
 
 
-  <script>(function(){function e(n){const e=window.getSelection(),t=document.createRange();t.selectNodeContents(n),e.removeAllRanges(),e.addRange(t)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script>
+  <script>(function(){function e(e){const t=window.getSelection(),n=document.createRange();n.selectNodeContents(e),t.removeAllRanges(),t.addRange(n)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){if(window.getSelection().toString())return;e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script>
 
 
  
@@ -258,25 +306,6 @@ Miseratus fonte Ditis conubia.
       <label for="menu-control" class="hidden book-menu-overlay"></label>
     </div>
 
-    
-    <aside class="book-toc">
-      <div class="book-toc-content">
-        
-  
-<nav id="TableOfContents">
-  <ul>
-    <li><a href="#columns">Columns</a>
-      <ul>
-        <li><a href="#example">Example</a></li>
-      </ul>
-    </li>
-  </ul>
-</nav>
-
-
- 
-      </div>
-    </aside>
     
   </main>
 

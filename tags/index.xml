@@ -4,25 +4,23 @@
     <title>Tags on BiliKid&#39;s blog</title>
     <link>https://bilikid.github.io/tags/</link>
     <description>Recent content in Tags on BiliKid&#39;s blog</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 20 Oct 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://bilikid.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 24 Nov 2024 10:35:18 +0800</lastBuildDate>
+    <atom:link href="https://bilikid.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>lisp</title>
+      <title>Lisp</title>
       <link>https://bilikid.github.io/tags/lisp/</link>
       <pubDate>Wed, 20 Oct 2021 00:00:00 +0000</pubDate>
-      
       <guid>https://bilikid.github.io/tags/lisp/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>scheme</title>
+      <title>Scheme</title>
       <link>https://bilikid.github.io/tags/scheme/</link>
       <pubDate>Wed, 20 Oct 2021 00:00:00 +0000</pubDate>
-      
       <guid>https://bilikid.github.io/tags/scheme/</guid>
       <description></description>
     </item>
-    
   </channel>
 </rss>
